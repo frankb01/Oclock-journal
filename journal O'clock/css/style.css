@@ -1,5 +1,10 @@
+/* règles génériques */
 * {
   box-sizing: border-box;
+}
+
+img {
+  color: inherit;
 }
 
 body {
@@ -11,10 +16,16 @@ body {
   margin: 0 auto;
 }
 
+em {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* en tête */
 header {
-  margin-right: : auto;
+  margin-right: auto;
   margin-left: auto;
-  /* margin-top:  2.5rem; */
   max-width: 100%;
   height: 100vh;
   padding: 0.625rem 3rem;
@@ -24,15 +35,23 @@ header {
   position: relative;
 }
 
+header img {
+  max-width: 25rem;
+  border-radius: 50%;
+  border: 20px solid grey;
+}
+
 h1 {
-  padding-top: 7rem;
+  padding-top: 1rem;
 }
 
 nav {
+  width: 100%;
   position: fixed;
   top: 0;
-  margin: 1.25rem auto;
-  padding-bottom: 5rem;
+  right: 0;
+  margin: 0 auto;
+  padding-bottom: 0.625rem;
 }
 
 nav ul {
@@ -62,11 +81,15 @@ nav a:hover {
   font-size: 0.9rem;
 }
 
+
+
+/* corps de la page */
 section{
   display: flex;
   padding-top: 7rem;
 }
 
+/* première section */
 #s01 {
   background-color: #00a3e8;
   height: 100vh;
@@ -78,6 +101,13 @@ section{
   background-color: #00a3e8;
   width:  50%;
 }
+
+#s01 li {
+  padding : 0.625rem;
+  margin: 0 2rem;
+  line-height: 1.2rem;
+}
+
 
 #s02 {
   background-color: #617cbe;
